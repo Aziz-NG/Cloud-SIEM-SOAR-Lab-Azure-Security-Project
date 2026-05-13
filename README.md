@@ -83,7 +83,7 @@ Logic Apps (SOAR Playbooks)
 | Microsoft Azure | Cloud infrastructure |
 | Microsoft Sentinel | SIEM & threat detection |
 | Entra ID | Identity telemetry source |
-| Azure Monitor | Log ingestion |
+| Azure Monitor (Log Analytics) | Log ingestion |
 | Kusto Query Language (KQL) | Detection engineering |
 | Logic Apps | SOAR automation |
 | Azure Workbooks | SOC dashboards |
