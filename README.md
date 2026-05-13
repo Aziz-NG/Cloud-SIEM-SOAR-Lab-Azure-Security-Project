@@ -386,40 +386,28 @@ This project aligns with enterprise security frameworks commonly used in modern 
 
 # 🧠 Key Security Outcomes
 
-This implementation demonstrates:
+This implementation demonstrates practical application of modern Microsoft security engineering principles across identity protection, detection, and response domains:
 
-- Identity-first security architecture (Zero Trust model)
-- Detection engineering using KQL (Detection-as-Code)
-- SOC automation using Logic Apps (SOAR engineering)
-- MITRE ATT&CK-aligned detection strategy
-- Real-world SOC workflow simulation
-- Automated containment of compromised identities
+- Identity-centric security design aligned with Zero Trust principles  
+- Detection engineering using KQL-based Detection-as-Code methodology  
+- Automated incident response through Logic Apps SOAR workflows  
+- Threat modeling and detection alignment using MITRE ATT&CK  
+- End-to-end SOC workflow simulation from detection to containment  
+- Automated remediation of compromised identities in near real time
 
 ---
 
 # 🚀 Key Takeaways
 
-This project reflects how modern Microsoft security teams operate:
-
-- Shift from reactive monitoring → proactive detection engineering  
-- Shift from manual SOC operations → automated response systems  
-- Identity as the primary security perimeter in cloud environments  
-- Integration of SIEM + SOAR for closed-loop security operations  
-- Operational use of MITRE ATT&CK in detection design 
+- **Proactive vs. Reactive**: This project shifts the SOC focus from simply "watching screens" to active threat hunting and engineering.
+- **Scalability through Automation**: Demonstrates how modern teams use SOAR to handle high-volume threats without increasing headcount.
+- **Operational Maturity**: Highlights the transition from siloed security tools to a unified, framework-driven security operation. 
 
 ---
 
 # 📌 Conclusion
 
-This project showcases a production-aligned **Microsoft Sentinel SOC engineering implementation** capable of:
-
-- Detecting identity-based threats in real time  
-- Correlating security telemetry across Azure services  
-- Automating incident response using SOAR playbooks  
-- Reducing SOC response time and operational overhead  
-- Aligning with enterprise security frameworks (NIST, ISO, SOC 2)  
-
-It represents a complete **cloud SOC simulation built on Microsoft security architecture principles**.
+This implementation serves as a production-ready simulation of a **Microsoft Sentinel SOC**. By integrating SIEM and SOAR capabilities, the project demonstrates a quantifiable reduction in Mean Time to Respond (MTTR) and operational overhead. It stands as a rigorous application of enterprise-grade security principles, fully aligned with **NIST and ISO standards**, designed to defend modern, cloud-first environments.
 
 ---
 
