@@ -58,7 +58,7 @@ This environment integrates Azure-native security services to simulate enterpris
 Entra ID (Azure AD)
         |
         v
-Azure Monitor + Diagnostic Settings
+Diagnostic Settings
         |
         v
 Log Analytics Workspace
@@ -82,7 +82,7 @@ Logic Apps (SOAR Playbooks)
 |---|---|
 | Microsoft Azure | Cloud infrastructure |
 | Microsoft Sentinel | SIEM & threat detection |
-| Entra ID (Azure AD) | Identity telemetry source |
+| Entra ID | Identity telemetry source |
 | Azure Monitor | Log ingestion |
 | Kusto Query Language (KQL) | Detection engineering |
 | Logic Apps | SOAR automation |
@@ -122,8 +122,6 @@ Detects:
 * Password spraying attacks
 * Credential stuffing attempts
 
-<img width="1880" height="860" alt="Password Spray Detection" src="YOUR_SCREENSHOT_HERE" />
-
 ---
 
 # 🌍 Impossible Travel Detection
@@ -155,8 +153,6 @@ This detection helps identify:
 * VPN/proxy abuse
 * Suspicious cross-region authentication activity
 
-<img width="1880" height="860" alt="Impossible Travel Detection" src="YOUR_SCREENSHOT_HERE" />
-
 ---
 
 # 🎯 MITRE ATT&CK Mapping
@@ -175,8 +171,6 @@ This project aligns detection logic and incident response workflows with the MIT
 
 Provides standardized threat classification aligned with enterprise SOC methodologies and modern detection engineering practices.
 
-<img width="1880" height="860" alt="MITRE ATTACK Mapping" src="YOUR_SCREENSHOT_HERE" />
-
 ---
 
 # ⚡ SOAR Automation – Playbooks
@@ -192,10 +186,9 @@ Provides standardized threat classification aligned with enterprise SOC methodol
 * Send email notification
 * Send Microsoft Teams alert
 * Include:
-  * Username
-  * Source IP
-  * Alert severity
   * Incident title
+  * Alert severity
+  * Incident link
 
 ### 🛡️ Security Benefit
 
