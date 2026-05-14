@@ -75,7 +75,7 @@ This environment integrates Azure-native security services to simulate enterpris
 
 # 🔍 Detection Rules & MITRE ATT&CK Mapping
 
-## 🔹 Brute Force / Password Spraying
+## 🔹 Brute Force
 
 ### 🧪 Detection Logic
 
@@ -246,7 +246,6 @@ Controlled attack simulations were performed to validate Sentinel detections and
 
 | Scenario | Action | Result |
 |---|---|---|
-| Password Spraying | Multiple failed login attempts | Sentinel incident triggered |
 | Impossible Travel | Login attempts from multiple regions | Alert generated successfully |
 | SOAR Automation | High-severity incident simulation | Account disabled automatically |
 
@@ -254,22 +253,25 @@ Controlled attack simulations were performed to validate Sentinel detections and
 
 ## 🧪 Validation Results
 
-### Password Spray Simulation
-
-* Simulated repeated failed logins across multiple accounts
-* Detection triggered successfully within Sentinel
-
 ### Impossible Travel Simulation
 
 * Simulated authentication from geographically distant VPN endpoints
 * Impossible travel alert generated and validated
+
+> img/[Impossible Travel Detection Incident - Azure Portal](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Impossible%20Travel%20Detection%20-%20Azure.PNG)
+
+> img/[Impossible Travel Detection Incident - Defender Portal](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Impossible%20Travel%20Detection%20-%20Defender.PNG)
+
+> img/[Incident Email Notification](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Notification%20Email.PNG)
 
 ### SOAR Automation Validation
 
 * High-severity incident triggered automated remediation
 * Account disabled and active sessions revoked
 
-> img/[Brute Force Incident - Sentinel](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Brute%20Force%20Incident-Sentinel.PNG)
+> img/[Brute Force Incident - Azure Portal](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Brute%20Force%20Incident%20-%20Azure.PNG)
+
+> img/[Brute Force Incident - Defender Portal](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Brute%20Force%20Incident%20-%20Defender.PNG)
 
 > img/[Account Disabled](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Account%20Status%20Disabled.PNG)
 
