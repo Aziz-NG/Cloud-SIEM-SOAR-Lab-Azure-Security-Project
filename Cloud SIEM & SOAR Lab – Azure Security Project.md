@@ -50,7 +50,7 @@ This environment integrates Azure-native security services to simulate enterpris
 * **Logic Apps** — SOAR automation and incident response
 * **Azure Workbooks** — dashboards and visualization
 
-Diagram Screenshoot
+> img/[Diagram.png](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Diagram.png)
 
 ---
 
@@ -92,7 +92,7 @@ SigninLogs
 | Brute Force | T1110 |
 | Password Spraying | T1110.003 |
 
-Analytic Rule - BruteForce Detection
+> img/[Brute-Force-Detection-Analytic-Rule](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Analytic%20Rule%20-%20Brute%20Force%20Detection.PNG)
 
 ### 🛡️ Security Benefit
 
@@ -122,7 +122,7 @@ SigninLogs
 | Valid Accounts | T1078 |
 | Proxy | T1090 |
 
-Analytic Rule - Impossible Travel Detection
+> img/[Analytic Rule-Impossible-Travel-Detection](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Analytic%20Rule%20-%20Impossible%20Travel%20Detection.PNG)
 
 ### 🛡️ Security Benefit
 
