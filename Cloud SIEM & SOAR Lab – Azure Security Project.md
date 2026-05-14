@@ -58,7 +58,7 @@ This environment integrates Azure-native security services to simulate enterpris
 Entra ID (Azure AD)
         |
         v
-Diagnostic Settings
+Azure Monitor
         |
         v
 Log Analytics Workspace
