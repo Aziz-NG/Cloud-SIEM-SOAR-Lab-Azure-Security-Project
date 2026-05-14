@@ -50,29 +50,7 @@ This environment integrates Azure-native security services to simulate enterpris
 * **Logic Apps** — SOAR automation and incident response
 * **Azure Workbooks** — dashboards and visualization
 
----
-
-## 🔄 Security Workflow
-
-```text
-    Entra ID
-        |
-        v
-  Azure Monitor
-        |
-        v
-Log Analytics Workspace
-        |
-        v
-Microsoft Sentinel
-├── Analytics Rules
-├── Incidents
-├── Workbooks
-└── Automation Rules
-        |
-        v
-Logic Apps (SOAR Playbooks)
-```
+Diagram Screenshoot
 
 ---
 
@@ -114,6 +92,8 @@ SigninLogs
 | Brute Force | T1110 |
 | Password Spraying | T1110.003 |
 
+Analytic Rule - BruteForce Detection
+
 ### 🛡️ Security Benefit
 
 Detects:
@@ -141,6 +121,8 @@ SigninLogs
 |---|---|
 | Valid Accounts | T1078 |
 | Proxy | T1090 |
+
+Analytic Rule - Impossible Travel Detection
 
 ### 🛡️ Security Benefit
 
@@ -190,10 +172,11 @@ Provides standardized threat classification aligned with enterprise SOC methodol
   * Alert severity
   * Incident link
 
+Logic App - Notification Designer
+
 ### 🛡️ Security Benefit
 
 Accelerates analyst awareness and improves incident triage efficiency.
-
 
 ---
 
@@ -208,6 +191,8 @@ Accelerates analyst awareness and improves incident triage efficiency.
 * Disable compromised Entra ID account
 * Revoke active sessions
 * Trigger automated remediation workflow
+
+Logic App- Account-Containment Designer  
 
 ### 🛡️ Security Benefit
 
@@ -281,6 +266,10 @@ Controlled attack simulations were performed to validate Sentinel detections and
 
 * High-severity incident triggered automated remediation
 * Account disabled and active sessions revoked
+
+Brute Force Incident - Sentinel
+Account Disabled
+Brute Force Email Notification
 
 ### 🛡️ Security Benefit
 
