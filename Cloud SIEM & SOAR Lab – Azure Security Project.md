@@ -192,7 +192,7 @@ Accelerates analyst awareness and improves incident triage efficiency.
 * Revoke active sessions
 * Trigger automated remediation workflow
 
-> img[Logic App- Account-Containment Designer](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/LogicApp-Account_Containment%20Flow.PNG) 
+> img/[Logic App- Account-Containment Designer](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/LogicApp-Account_Containment%20Flow.PNG) 
 
 ### 🛡️ Security Benefit
 
@@ -268,7 +268,9 @@ Controlled attack simulations were performed to validate Sentinel detections and
 * Account disabled and active sessions revoked
 
 > img/[Brute Force Incident - Sentinel](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Brute%20Force%20Incident-Sentinel.PNG)
+
 > img/[Account Disabled](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Account%20Status%20Disabled.PNG)
+
 > img/[Brute Force Email Notification](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Brute%20Force%20Email%20Notification.PNG)
 
 ### 🛡️ Security Benefit
