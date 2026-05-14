@@ -157,7 +157,7 @@ Provides standardized threat classification aligned with enterprise SOC methodol
 
 # ⚡ SOAR Automation – Playbooks
 
-## 🔔 Playbook 1 – Incident Notification
+## 🔔 Playbook 1 – Notification
 
 ### Trigger
 
@@ -180,7 +180,7 @@ Accelerates analyst awareness and improves incident triage efficiency.
 
 ---
 
-## 🚫 Playbook 2 – Account Containment
+## 🚫 Playbook 2 – Account-Containment
 
 ### Trigger
 
