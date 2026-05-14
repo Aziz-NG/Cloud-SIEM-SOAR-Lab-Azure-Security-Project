@@ -61,7 +61,7 @@ This environment integrates Azure-native security services to simulate enterpris
 | Microsoft Azure | Cloud infrastructure |
 | Microsoft Sentinel | SIEM & threat detection |
 | Entra ID | Identity telemetry source |
-| Azure Monitor (Log Analytics) | Log ingestion |
+| Azure Monitor (Log Analytics) | Log ingestion | img/[Log Analytics Workspace](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Log%20Analytics%20Workspace.PNG)
 | Kusto Query Language (KQL) | Detection engineering |
 | Logic Apps | SOAR automation |
 | Azure Workbooks | SOC dashboards |
