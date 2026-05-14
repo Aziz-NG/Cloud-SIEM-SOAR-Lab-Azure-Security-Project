@@ -92,7 +92,7 @@ SigninLogs
 | Brute Force | T1110 |
 | Password Spraying | T1110.003 |
 
-> img/[Brute-Force-Detection-Analytic-Rule](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Analytic%20Rule%20-%20Brute%20Force%20Detection.PNG)
+> img/[Analytic Rule-Brute-Force-Detection](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Analytic%20Rule%20-%20Brute%20Force%20Detection.PNG)
 
 ### 🛡️ Security Benefit
 
@@ -172,7 +172,7 @@ Provides standardized threat classification aligned with enterprise SOC methodol
   * Alert severity
   * Incident link
 
-Logic App - Notification Designer
+> img/[Logic App - Notification](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Logic%20App%20-%20Notification.PNG)
 
 ### 🛡️ Security Benefit
 
@@ -192,7 +192,7 @@ Accelerates analyst awareness and improves incident triage efficiency.
 * Revoke active sessions
 * Trigger automated remediation workflow
 
-Logic App- Account-Containment Designer  
+> img[Logic App- Account-Containment Designer](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/LogicApp-Account_Containment%20Flow.PNG) 
 
 ### 🛡️ Security Benefit
 
@@ -267,9 +267,9 @@ Controlled attack simulations were performed to validate Sentinel detections and
 * High-severity incident triggered automated remediation
 * Account disabled and active sessions revoked
 
-Brute Force Incident - Sentinel
-Account Disabled
-Brute Force Email Notification
+> img/[Brute Force Incident - Sentinel](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Brute%20Force%20Incident-Sentinel.PNG)
+> img/[Account Disabled](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Account%20Status%20Disabled.PNG)
+> img/[Brute Force Email Notification](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Brute%20Force%20Email%20Notification.PNG)
 
 ### 🛡️ Security Benefit
 
@@ -290,6 +290,8 @@ Custom Azure Workbooks dashboards provide centralized SOC visibility and operati
 * Authentication trend analysis
 * SOC operational metrics
 * Top targeted accounts
+
+> Screenshot to be added
 
 ### 🛡️ Security Benefit
 
