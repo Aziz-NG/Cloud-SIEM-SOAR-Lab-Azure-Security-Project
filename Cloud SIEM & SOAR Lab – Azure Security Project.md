@@ -55,10 +55,10 @@ This environment integrates Azure-native security services to simulate enterpris
 ## 🔄 Security Workflow
 
 ```text
-Entra ID (Azure AD)
+    Entra ID
         |
         v
-Azure Monitor
+  Azure Monitor
         |
         v
 Log Analytics Workspace
