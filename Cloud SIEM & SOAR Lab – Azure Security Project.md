@@ -52,6 +52,8 @@ This environment integrates Azure-native security services to simulate enterpris
 
 > img/[Diagram.png](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Diagram.png)
 
+> img/[Log Analytics Workspace](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Log%20Analytics%20Workspace.PNG)
+
 ---
 
 # 🛠️ Technologies & Skills Demonstrated
@@ -69,7 +71,6 @@ This environment integrates Azure-native security services to simulate enterpris
 | MITRE ATT&CK Mapping | Threat classification |
 | Attack Simulation | Detection validation |
 
-> img/[Log Analytics Workspace](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Log%20Analytics%20Workspace.PNG)
 ---
 
 # 🔍 Detection Rules & MITRE ATT&CK Mapping
