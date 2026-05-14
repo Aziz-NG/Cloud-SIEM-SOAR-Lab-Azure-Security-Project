@@ -356,23 +356,6 @@ This project aligns with enterprise security frameworks commonly used in modern 
 
 ---
 
-# 📂 Repository Structure
-
-```text
-.
-├── README.md
-├── screenshots/
-├── diagrams/
-├── kql/
-│   ├── brute_force_detection.kql
-│   └── impossible_travel.kql
-├── playbooks/
-├── workbooks/
-└── architecture/
-```
-
----
-
 # 🧠 Key Security Outcomes
 
 This implementation demonstrates practical application of modern Microsoft security engineering principles across identity protection, detection, and response domains:
