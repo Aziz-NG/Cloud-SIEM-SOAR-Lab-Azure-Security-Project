@@ -149,7 +149,6 @@ This project aligns detection logic and incident response workflows with the MIT
 | Password Spraying | T1110.003 | Multiple failed logins across users |
 | Valid Accounts | T1078 | Impossible travel authentication |
 | Proxy | T1090 | Geolocation anomaly detection |
-| Account Discovery | T1087 | Authentication enumeration visibility |
 
 ### 🛡️ Security Benefit
 
