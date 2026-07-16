@@ -296,8 +296,6 @@ Custom Azure Workbooks dashboards provide centralized SOC visibility and operati
 * SOC operational metrics
 * Top targeted accounts
 
-> Screenshot to be added
-
 ### 🛡️ Security Benefit
 
 Improves threat visibility and supports real-time security monitoring across authentication events.
