@@ -50,7 +50,26 @@ This environment integrates Azure-native security services to simulate enterpris
 * **Logic Apps** — SOAR automation and incident response
 * **Azure Workbooks** — dashboards and visualization
 
-> img/[Diagram.png](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Diagram.png)
+```mermaid
+flowchart TD
+    A[Entra ID Sign-in Logs] --> B[Sentinel Analytics Rules]
+    B --> B1[Brute Force Detection]
+    B --> B2[Impossible Travel Detection]
+    B1 --> C[Sentinel Incident Created]
+    B2 --> C
+    C --> D[Playbook 1: Notification]
+    D --> D1[Outlook Email Alert]
+    C --> E{Severity High?}
+    E -->|Yes| F[Playbook 2: Account Containment]
+    F --> F1[Disable account + revoke sessions]
+    F1 --> G[Confirmation email sent]
+    E -->|No| H[Logged for manual analyst review]
+
+    style D fill:#5eead4,color:#000
+    style F fill:#fbbf24,color:#000
+    style G fill:#5eead4,color:#000
+    style H fill:#e5e7eb,color:#000
+```
 
 > img/[Log Analytics Workspace](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Log%20Analytics%20Workspace.PNG)
 
