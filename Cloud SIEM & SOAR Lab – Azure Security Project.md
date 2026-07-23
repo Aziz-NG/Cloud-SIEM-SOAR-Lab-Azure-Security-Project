@@ -167,7 +167,6 @@ Provides standardized threat classification aligned with enterprise SOC methodol
 ### Actions
 
 * Send email notification
-* Send Microsoft Teams alert
 * Include:
   * Incident title
   * Alert severity
