@@ -113,8 +113,6 @@ That second row, captured as a before/after screenshot, is the core proof point 
 
 > img/[Before-After - Legitimate Travel Case](INSERT LINK) — side-by-side or sequential screenshots showing: the incident created, the AI's medium/low-confidence assessment, the approval email generated instead of automatic containment, and the account remaining active/enabled throughout
 
-> img/[High-Confidence Auto-Containment Case](INSERT LINK) — screenshot showing a genuine attack pattern (e.g., extreme brute-force attempt count) resulting in a high-confidence AI assessment and automatic containment with no approval step
-
 ---
 
 # 📋 Governance Note
