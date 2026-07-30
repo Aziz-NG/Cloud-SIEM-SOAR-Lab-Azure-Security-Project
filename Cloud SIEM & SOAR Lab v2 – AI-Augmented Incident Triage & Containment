@@ -137,7 +137,3 @@ v2 targets the one real weak point in v1's design: a detection firing high sever
 
 ---
 
-- [ ] High-confidence auto-containment test (e.g., extreme brute-force count → high confidence → automatic containment, no approval step)
-
----
-*Author: [Your name] — CISSP, CCSP, Security+. v1 of this project: [link to v1 repo].*
