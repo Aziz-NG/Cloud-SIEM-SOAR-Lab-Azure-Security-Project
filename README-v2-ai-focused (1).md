@@ -137,26 +137,6 @@ v2 targets the one real weak point in v1's design: a detection firing high sever
 
 ---
 
-# 🔧 Build Notes — Challenges & Lessons Learned
-
-A few real issues hit during the build, since debugging a live multi-service pipeline says more than a clean "it just worked" narrative:
-
-- **Azure's API surface shifted mid-build.** The Azure OpenAI resource was provisioned against the newer unified `v1` endpoint (`.services.ai.azure.com/openai/v1/...`) rather than the classic `deployments/{name}/chat/completions` pattern most tutorials assume. A 404 initially looked like a credentials problem — turned out to be a URL structure mismatch, confirmed by comparing the resource's actual endpoint against the request being sent, not by re-checking the key.
-- **Silent entity mapping failure on an array-type column.** The IP entity mapping returned empty results with no error — traced back to the KQL query's `Locations` column being an array (`make_set()`), which isn't a valid identifier value. Fixed by adding a scalar `IPAddress` column to the query specifically for entity mapping to bind to.
-- **A logic bug that defeated the entire confidence gate.** Containment was executing regardless of AI confidence or analyst approval — found by tracing the Logic App's `runAfter` dependency chain rather than trusting the visual branch layout. An `If` action's `runAfter` reference is satisfied once *either* branch completes, so an action sitting outside both branches (rather than nested inside the one that should trigger it) runs unconditionally. Fixed by moving the containment actions inside the specific branches that should trigger them.
-- **Sentinel can't natively correlate alerts across different analytics rules.** Alert grouping only operates within a single rule — Brute Force and Impossible Travel alerts can never be automatically merged into one incident by rule-level settings alone, regardless of how those settings are configured. Cross-rule correlation would require either a dedicated KQL correlation step in the Logic App itself, or migrating to the unified Defender portal's correlation engine.
-- **Static alert fields don't reflect incident severity.** The AI's confidence didn't change between a mild and an extreme brute-force test, because the rule's `Severity` and `Description` fields are static, not computed per-incident. Fixed using Sentinel's **Custom Details** feature to surface the actual computed value (failed-attempt count) as its own field the AI could reason against.
-
----
-
-Quick reference for every image this README expects — capture these as you finish each part of the build, then swap the `(INSERT LINK)` placeholders above for the real GitHub-hosted image links (same pattern as v1: upload to an `img/` folder in the repo, then link to it).
-
-- [ ] Logic App designer view — full AI judgment layer canvas
-- [ ] AI-enhanced notification email (Title/Severity + AI Assessment/Confidence/False Positive Likelihood/Recommended Action)
-- [ ] Outlook approval email, showing the AI's reasoning and Approve/Reject buttons
-- [ ] Confirmation email — automatic/high-confidence path
-- [ ] Confirmation email — analyst-approved path
-- [ ] Before/after sequence for the legitimate-travel false-positive test (incident → AI judgment → approval requested → account stays active)
 - [ ] High-confidence auto-containment test (e.g., extreme brute-force count → high confidence → automatic containment, no approval step)
 
 ---
