@@ -64,27 +64,31 @@ Example of the difference this makes for the analyst:
 
 **What the AI does NOT do:** it never disables an account or revokes sessions itself. It only produces the judgment above. Execution still happens exclusively through the Logic Apps playbooks — either automatically (when confidence is high) or after a human clicks approve (when it isn't). This boundary matters: an LLM that both judges *and* acts on an irreversible action like account containment introduces reliability and manipulation risks that aren't worth the convenience. Keeping the AI as a recommender, and the playbook as the sole executor, avoids that.
 
-> 
 
 ---
 
 # ⚡ How It Changes Incident Response
 
-## 🔔 Notifications — now AI-summarized
+## 🔔 Notification — now AI-summarized
 
 Instead of raw incident fields, the analyst's email alert now includes the AI's plain-language summary and confidence level, grounded in the actual incident data (account, IP, and — where applicable — the specific attempt count) rather than just the rule's static title and severity.
 
+>img/[Logic App Notification](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Logic%20App%20designer%20view%20-%20Notification.PNG)
+
+>img/[AI-Enhanced Notification Email](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/AI-Enhanced%20Notification%20Email.PNG)
 
 ## 🚫 Account Containment — now confidence-gated
 
 * **AI confidence is high** → containment proceeds automatically, exactly as it did in v1 (account disabled, sessions revoked)
 * **AI confidence is low or medium** → instead of disabling the account immediately, the analyst receives an **Outlook approval email** summarizing the incident and the AI's reasoning, with built-in **Approve** / **Reject** buttons — one click from the inbox, not a manual investigation
 
-> 
 
 * **If the analyst doesn't respond in time** → no action is taken, and it escalates to a backup contact instead. The system deliberately does *not* auto-approve on timeout — a stalled response should never result in an unattended account lockout.
 * **Whenever containment actually executes** — whether automatically (high confidence) or after analyst approval (low/medium confidence) — a **confirmation email** fires immediately after, stating the incident number, the account affected, the exact actions taken (disabled + sessions revoked), the timestamp, and whether it was automatic or analyst-approved. This closes a gap v1 already covered (v1's validation included a confirmation email after containment) that needed to carry forward into v2 rather than get dropped in the redesign.
 
+>img/[Logic App Containment](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Logic%20App%20designer%20view%20-%20Account%20Containment.PNG)
+
+>img/[Approval/Reject Email](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/Outlook%20Approval%20Email.PNG)
 
 ---
 
@@ -112,7 +116,7 @@ That variance is the actual proof point: the human reviewing the case retained r
 
 **Note on the high-confidence path:** — see Known Limitation below.
 
-> img
+> img/[Approve vs Reject Comparison](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/img/approve-vs-reject-comparison.png)
 
 ---
 
