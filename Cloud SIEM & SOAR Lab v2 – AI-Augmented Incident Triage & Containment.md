@@ -41,7 +41,7 @@ flowchart TD
     style H fill:#e5e7eb,color:#000
 ```
 
-*Everything left of the AI step is unchanged from v1 — same detections, same incident creation. Everything the AI produces feeds into a decision point that either lets the existing containment playbook run automatically (high confidence) or pauses for a one-tap human approval by email (anything less than high confidence). Either way, once containment actually executes, a confirmation email fires so there's always a record of what was done and when.*
+*From v1, we get the same detections, same incident creation. Everything the AI produces feeds into a decision point that either lets the existing containment playbook run automatically (high confidence) or pauses for a one-tap human approval by email (anything less than high confidence). Either way, once containment actually executes, a confirmation email fires so there's always a record of what was done and when.*
 
 > 
 
@@ -62,7 +62,7 @@ Example of the difference this makes for the analyst:
 
 **With AI (v2):** *"This incident shows a sign-in from Montreal followed by a sign-in from Paris 5 hours later. Confidence: medium. This timing is plausible for a transatlantic flight, so false-positive likelihood is medium-high. Recommend verifying with the user before taking any containment action."*
 
-**What the AI does NOT do:** it never disables an account or revokes sessions itself. It only produces the judgment above. Execution still happens exclusively through the Logic Apps playbooks — either automatically (when confidence is high) or after a human clicks approve (when it isn't). This boundary matters: an LLM that both judges *and* acts on an irreversible action like account containment introduces reliability and manipulation risks that aren't worth the convenience. Keeping the AI as a recommender, and the playbook as the sole executor, avoids that.
+**What the AI does NOT do:** it never disables an account or revokes sessions itself. It only produces the judgment above. Execution still happens exclusively through the Logic Apps playbooks — either automatically (when confidence is high) or after a human clicks approve (when it isn't). The AI acts as a recommender, and the playbook as the executor.
 
 
 ---
