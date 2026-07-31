@@ -122,7 +122,7 @@ That variance is the actual proof point: the human reviewing the case retained r
 
 # 📋 Governance Note
 
-This version treats the AI strictly as a decision-support tool, with a human required for any irreversible action — an approach that lines up with NIST's AI Risk Management Framework, which calls for human oversight on consequential automated decisions. Worth stating plainly in an interview: the design choice not to let AI execute containment directly was deliberate, not a limitation I ran out of time to fix.
+This version treats the AI strictly as a decision-support tool, with a human required for any irreversible action — an approach that lines up with NIST's AI Risk Management Framework, which calls for human oversight on consequential automated decisions.
 
 ---
 
