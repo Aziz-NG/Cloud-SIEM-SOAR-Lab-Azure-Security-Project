@@ -107,6 +107,7 @@ The scenario that matters most for this version isn't "does the AI work," it's "
 | **Repeated mistyped password (multiple failed sign-ins, no actual attack)** | **Account disabled automatically — no distinction between a typo and a real attack** | **AI flags medium/low confidence → routed to analyst for a decision** |
 
 What makes this validation meaningful isn't just that the gate fired — it's what happened across multiple test runs of this same scenario: **the AI returned the same medium-confidence assessment each time, but the outcome differed depending on the analyst's own judgment call**. In some runs the recommendation was approved (account disabled, consistent with treating it as suspicious enough to act on); in others it was rejected (account stayed active, treating it as a benign typo).
+
 That variance is the actual proof point: the human reviewing the case retained real decision-making authority over an identical AI assessment, rather than the approval step being a formality that always resolves the same way. In v1, there was no such decision to make at all — a cluster of failed logins past the threshold meant automatic disablement, full stop, regardless of whether it was a genuine attack or someone who forgot they'd changed their password last week.
 
 **Note on the high-confidence path:** — see Known Limitation below.
