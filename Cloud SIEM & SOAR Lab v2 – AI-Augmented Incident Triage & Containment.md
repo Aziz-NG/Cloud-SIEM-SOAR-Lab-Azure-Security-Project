@@ -8,7 +8,6 @@
 ![Sentinel](https://img.shields.io/badge/Platform-Microsoft%20Sentinel-green)
 ![SOAR](https://img.shields.io/badge/Security-SOAR%20Automation-red)
 ![Frameworks](https://img.shields.io/badge/Compliance-NIST%20AI%20RMF-orange)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
 ---
 
