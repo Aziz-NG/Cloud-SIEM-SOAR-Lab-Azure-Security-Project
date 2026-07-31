@@ -109,7 +109,7 @@ The scenario that matters most for this version isn't "does the AI work," it's "
 What makes this validation meaningful isn't just that the gate fired — it's what happened across multiple test runs of this same scenario: **the AI returned the same medium-confidence assessment each time, but the outcome differed depending on the analyst's own judgment call**. In some runs the recommendation was approved (account disabled, consistent with treating it as suspicious enough to act on); in others it was rejected (account stayed active, treating it as a benign typo).
 That variance is the actual proof point: the human reviewing the case retained real decision-making authority over an identical AI assessment, rather than the approval step being a formality that always resolves the same way. In v1, there was no such decision to make at all — a cluster of failed logins past the threshold meant automatic disablement, full stop, regardless of whether it was a genuine attack or someone who forgot they'd changed their password last week.
 
-**Note on the high-confidence path:** the auto-containment side of the confidence gate (AI assesses high confidence → containment fires automatically, no approval needed) is real, working logic in the pipeline — the same `Confidence_Gate` condition handles both outcomes. However, an attempt to specifically demonstrate it with an extreme brute-force test (a large number of failed attempts in a short window) did not reliably push the AI to a "high" confidence result, even after adding the actual attempt count to its input and tuning the prompt's calibration guidance. This suggests either the threshold guidance needs further tuning, or the model is (reasonably) staying cautious without additional corroborating signals beyond attempt count alone. This is documented honestly here rather than presented as a completed test — see Known Limitation below.
+**Note on the high-confidence path:** — see Known Limitation below.
 
 > img
 
@@ -137,7 +137,7 @@ v2 targets the one real weak point in v1's design: a detection firing high sever
 
 # ⚠️ Known Limitation & Future Work
 
-In the interest of accuracy, this version does not (yet) demonstrate or fully resolve:
+In the interest of accuracy, this version does not (yet) demonstrate or fully resolve the case below:
 
 - **High-confidence auto-containment wasn't reliably reproduced in testing.** The logic exists and is the same code path as the approval flow, but an extreme brute-force test (elevated failed-attempt count, fed directly to the AI) did not consistently produce a "high" confidence result. Next step would be further prompt calibration, or accepting that the model's caution here may itself be reasonable behavior worth keeping rather than "fixing."
 
