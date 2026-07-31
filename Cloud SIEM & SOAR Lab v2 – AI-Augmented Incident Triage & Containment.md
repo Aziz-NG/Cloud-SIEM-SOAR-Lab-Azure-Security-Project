@@ -1,6 +1,6 @@
 # 🤖 Cloud SIEM & SOAR Lab v2 – AI-Augmented Incident Triage & Containment
 
-> Builds on my [Cloud SIEM & SOAR Lab v1](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project) — same Sentinel detections, same Entra ID telemetry, same underlying Logic Apps playbooks. This version adds an **Azure OpenAI judgment layer** in front of incident response, so the analyst gets a plain-language triage summary instead of raw alert fields, and account containment only fires automatically when the AI is confident it's a real threat.
+> Builds on my [Cloud SIEM & SOAR Lab v1](https://github.com/Aziz-NG/Cloud-SIEM-SOAR-Lab-Azure-Security-Project/blob/main/Cloud%20SIEM%20%26%20SOAR%20Lab%20%E2%80%93%20Azure%20Security%20Project.md) — same Sentinel detections, same Entra ID telemetry, same underlying Logic Apps playbooks. This version adds an **Azure OpenAI judgment layer** in front of incident response, so the analyst gets a plain-language triage summary instead of raw alert fields, and account containment only fires automatically when the AI is confident it's a real threat.
 
 ![Azure](https://img.shields.io/badge/Cloud-Microsoft%20Azure-blue)
 ![AI](https://img.shields.io/badge/AI-Azure%20OpenAI-purple)
